@@ -1,134 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>College Fest</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFest 2026 | Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>TechFest 2026</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#register">Register</a>
-    </nav>
+<!-- High-Impact Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+        <div class="badge">Registration Live</div>
+        <h1>TechFest 2026</h1>
+        <p>Innovation Meets Celebration</p>
+        <nav class="hero-nav">
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#rules">Guidelines</a>
+            <a href="#register" class="cta-link">Register Now</a>
+        </nav>
+    </div>
 </header>
 
-<section id="about">
-    <h2>About Event</h2>
-    <p>Welcome to TechFest 2026. Enjoy coding competitions,
-       dance events and workshops.</p>
-</section>
+<main class="container">
+    
+    <!-- About Section with Glassmorphism -->
+    <section id="about" class="glass-card">
+        <div class="section-tag">The Vision</div>
+        <h2>About Event</h2>
+        <p>Welcome to TechFest 2026. This isn't just a college fest; it's a launchpad for developers, creators, and innovators. Join us for elite coding contests, high-energy cultural battles, and industry-led workshops.</p>
+    </section>
 
-<section id="schedule">
-    <h2>Event Schedule</h2>
-
-    <table>
-        <tr>
-            <th>Event</th>
-            <th>Time</th>
-            <th>Venue</th>
-        </tr>
-
-        <tr>
-            <td>Coding Contest</td>
-            <td>10:00 AM</td>
-            <td>Lab 1</td>
-        </tr>
-
-        <tr>
-            <td>Dance Battle</td>
-            <td>1:00 PM</td>
-            <td>Auditorium</td>
-        </tr>
-    </table>
-</section>
-
-<section id="rules">
-    <h2>Event Guidelines</h2>
-    <div class="rules-wrapper">
-        <!-- Unordered List Section -->
-        <div class="rules-column">
-            <h3>General Rules</h3>
-            <ul>
-                <li>ID card compulsory</li>
-                <li>Report 30 minutes early</li>
-                <li>Maintain discipline</li>
-                <li>Follow the dress code</li>
-                <li>No outside food or drinks</li>
-                <li>Electronic gadgets are restricted</li>
-            </ul>
+    <!-- Interactive Schedule Grid -->
+    <section id="schedule">
+        <div class="section-header">
+            <h2>Event Schedule</h2>
+            <p>Select a category to view details</p>
         </div>
+        
+        <div class="event-grid">
+            <div class="event-card">
+                <div class="event-icon">💻</div>
+                <h3>Coding Contest</h3>
+                <p>10:00 AM — Lab 1</p>
+                <span class="type-tag">Technical</span>
+            </div>
 
-        <!-- Ordered List Section -->
-        <div class="rules-column">
-            <h3>Registration Process</h3>
-            <ol>
-                <li>Register online via the portal</li>
-                <li>Pay the participation fees</li>
-                <li>Verify your enrollment number</li>
-                <li>Download your entry pass</li>
-                <li>Check your assigned venue</li>
-                <li>Attend the event on time</li>
-            </ol>
-        </div>
-    </div>
-</section>
+            <div class="event-card">
+                <div class="event-icon">💃</div>
+                <h3>Dance Battle</h3>
+                <p>01:00 PM — Auditorium</p>
+                <span class="type-tag cultural">Cultural</span>
+            </div>
 
-<section id="register">
-    <h2>Registration</h2>
-    <form class="registration-form">
-        <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name">
+            <div class="event-card">
+                <div class="event-icon">🛡️</div>
+                <h3>Cyber Security</h3>
+                <p>03:30 PM — Lab 4</p>
+                <span class="type-tag workshop">Workshop</span>
+            </div>
         </div>
+    </section>
 
-        <div class="form-group">
-            <label>Enrollment Number</label>
-            <input type="text" placeholder="e.g. EN12345678">
+    <!-- Two-Column Rules Section -->
+    <section id="rules" class="rules-section">
+        <div class="rules-container">
+            <div class="rules-box">
+                <h3>General Rules</h3>
+                <ul>
+                    <li>ID card compulsory at all venues</li>
+                    <li>Report 30 minutes before start time</li>
+                    <li>Strict adherence to lab discipline</li>
+                    <li>Dress code: Semi-formal / Event T-shirt</li>
+                </ul>
+            </div>
+            <div class="rules-box">
+                <h3>Registration Steps</h3>
+                <ol>
+                    <li>Complete the online form below</li>
+                    <li>Verify enrollment via portal</li>
+                    <li>Secure your digital entry pass</li>
+                    <li>Check assigned venue details</li>
+                </ol>
+            </div>
         </div>
+    </section>
 
-        <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="email@college.edu">
-        </div>
+    <!-- Premium Registration Form -->
+    <section id="register">
+        <div class="form-wrapper">
+            <h2>Register for TechFest</h2>
+            <form class="registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="eg. ABC">
+                    </div>
+                    <div class="form-group">
+                        <label>Enrollment</label>
+                        <input type="text" placeholder="e.g. EN12345678">
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label>School/Department</label>
-            <select>
-                <option>SCSDF</option>
-                <option>SFS</option>
-                <option>SBF</option>
-            </select>
-        </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="priyanshi@college.edu">
+                </div>
 
-        <div class="form-group">
-            <label>Create Password</label>
-            <input type="password" placeholder="Min. 8 characters">
-        </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <select>
+                        <option>SCSDF</option>
+                        <option>SFS</option>
+                        <option>SBF</option>
+                    </select>
+                </div>
 
-        <input type="submit" value="Complete Registration" class="submit-btn">
-    </form>
-</section>
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </section>
 
-<section id="gallery">
-    <h2>Event Gallery</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <img src="image.jpg" alt="Event Image">
+    <!-- Modern Gallery -->
+    <section id="gallery">
+        <h2>Event Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000" alt="Tech">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1514525253344-991472743d67?auto=format&fit=crop&q=80&w=1000" alt="Culture">
+            </div>
         </div>
-        <div class="gallery-item">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-</section>
+    </section>
+
+</main>
 
 <footer>
-    <p>© 2026 TechFest</p>
+    <p>© 2026 TechFest Operations | Built for Excellence</p>
 </footer>
 
 </body>
